@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+
+  input {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    padding-top: 50px;
+    font-size: 20px;
+  }
+
+  .msg-block {
+    display: none;
+    width: 100%;
+    /* height: 100px; */
+    padding: 10px;
+    outline: 1px solid red;
+    margin-bottom: 30px;
+    background-color: red;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse
+}
+
+td, th {
+
+    border: 1px solid black;
+}

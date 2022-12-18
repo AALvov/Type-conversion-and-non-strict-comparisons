@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Список студентов</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="msg-block" >
+            <h1 class="msg-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam amet, impedit pariatur, molestias fugiat itaque explicabo, quidem ipsum corporis ea incidunt dignissimos vero vitae cumque optio ipsam molestiae sint sapiente!
+            </h1>
+        </div>
+<form method="post">
+    <div class="row">
+    <label for="Full_name" class="col-6"> ФИО студента</label>
+    <input type="text" name="Full_name" class="col-6" id="Full_name" required placeholder="Введите ФИО студента">  
+</div>
+<div class="row">
+<label for="faculty" class="col-6"> Факультет студента</label>
+    <input type="text" name="faculty" class="col-6" id="faculty" required placeholder="Введите факультет студента">
+</div>
+<div class="row">
+    <label for="birthdate" class="col-6">Дата рождения</label>
+   <input type="date" name="birthdate" class="col-6" id="birthdate" required>
+</div>
+<div class="row">
+   <label for="study" class="col-6">Год начала обучения</label>
+   <input type="number" name="study" class="col-6" id="study" required>
+</div>
+<input type="submit" value="Добавить студента">
+</form>
+<h1>Фильтры</h1>
+<div class="filter__container">
+<div class="row">
+    <label for="filter__fullname" class="col-6"> ФИО студента</label>
+<input type="text" name="filter__fullname" class="col-6" id="filter__fullname" required>  
+</div>
+<div class="row">
+<label for="filter__faculty" class="col-6"> Факультет студента</label>
+<input type="text" name="filter__faculty" class="col-6" id="filter__faculty" required>
+</div>
+<div class="row">
+<label for="filter__study_begin" class="col-6">Год начала обучения</label>
+<input type="text" name="filter__study_begin" class="col-6" id="filter__study_begin" required>
+</div>
+<div class="row">
+<label for="filter__study_end" class="col-6">Год окончания обучения</label>
+<input type="text" name="filter__study_end" class="col-6" id="filter__study_end" required>
+</div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th class="th__fullname"> ФИО студента</th>
+            <th class="th__faculty">Факультет</th>
+            <th class="th__birthdate">Дата рождения и возраст</th>
+            <th class="th__study">Годы обучения и номер курса</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+
+</div>
+
+
+    <script defer src="./js/main.js"></script>
+</body>
+
+</html>
